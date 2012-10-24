@@ -1,0 +1,14 @@
+make clean
+make servlets
+make client
+make emulator
+
+
+cp -r Servlet_HTML/* /home/abhi/jakarta-tomcat-4.1.27/webapps/rubis_servlets/
+cp -r Servlets/rubis_servlets.jar /home/abhi/jakarta-tomcat-4.1.27/webapps/rubis_servlets/WEB-INF/lib/
+
+update items set end_date = DATE_ADD(items.end_date, INTERVAL 1 YEAR);
+update items set end_date = DATE_ADD(items.end_date, INTERVAL 60 DAY);
+
+update items set start_date = DATE_ADD(items.start_date, INTERVAL 10 YEAR);
+

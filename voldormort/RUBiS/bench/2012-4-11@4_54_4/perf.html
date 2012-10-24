@@ -1,0 +1,51 @@
+<center><h2>*** Performance Report ***</h2></center><br>
+<A HREF="perf.html">Overall performance report</A><br>
+<A HREF="stat_client0.html">Main client (localhost) statistics</A><br>
+<A HREF="db_graphs.html">Database graphs</A><br>
+<A HREF="servlets_graphs.html">Servlets graphs</A><br>
+<p><br>&nbsp&nbsp&nbsp<A HREF="perf.html#node">Node information</A><br>
+&nbsp&nbsp&nbsp<A HREF="#time">Test timing information</A><br>
+&nbsp&nbsp&nbsp<A HREF="#up_stat">Up ramp statistics</A><br>
+&nbsp&nbsp&nbsp<A HREF="#run_stat">Runtime session statistics</A><br>
+&nbsp&nbsp&nbsp<A HREF="#down_stat">Down ramp statistics</A><br>
+&nbsp&nbsp&nbsp<A HREF="#all_stat">Overall statistics</A><br>
+&nbsp&nbsp&nbsp<A HREF="#cpu_graph">CPU usage graphs</A><br>
+&nbsp&nbsp&nbsp<A HREF="#procs_graph">Processes usage graphs</A><br>
+&nbsp&nbsp&nbsp<A HREF="#mem_graph">Memory usage graph</A><br>
+&nbsp&nbsp&nbsp<A HREF="#disk_graph">Disk usage graphs</A><br>
+&nbsp&nbsp&nbsp<A HREF="#net_graph">Network usage graphs</A><br>
+<br><A NAME="node"></A><h3>Node Information</h3><br>
+<B>Web server</B><br>
+&nbsp &nbsp Command is: /usr/bin/ssh -x localhost /bin/echo "Host  : "`/bin/hostname` ; /bin/echo "Kernel: "`/bin/cat /proc/version` ; /bin/grep net /proc/pci ; /bin/grep processor /proc/cpuinfo ; /bin/grep vendor_id /proc/cpuinfo ; /bin/grep model /proc/cpuinfo ; /bin/grep MHz /proc/cpuinfo ; /bin/grep cache /proc/cpuinfo ; /bin/grep MemTotal /proc/meminfo ; /bin/grep SwapTotal /proc/meminfo <br>
+
+<br><B>C-JDBC server</B><br>
+&nbsp &nbsp Command is: /usr/bin/ssh -x localhost /bin/echo "Host  : "`/bin/hostname` ; /bin/echo "Kernel: "`/bin/cat /proc/version` ; /bin/grep net /proc/pci ; /bin/grep processor /proc/cpuinfo ; /bin/grep vendor_id /proc/cpuinfo ; /bin/grep model /proc/cpuinfo ; /bin/grep MHz /proc/cpuinfo ; /bin/grep cache /proc/cpuinfo ; /bin/grep MemTotal /proc/meminfo ; /bin/grep SwapTotal /proc/meminfo <br>
+
+<br><B>Database server</B><br>
+&nbsp &nbsp Command is: /usr/bin/ssh -x localhost /bin/echo "Host  : "`/bin/hostname` ; /bin/echo "Kernel: "`/bin/cat /proc/version` ; /bin/grep net /proc/pci ; /bin/grep processor /proc/cpuinfo ; /bin/grep vendor_id /proc/cpuinfo ; /bin/grep model /proc/cpuinfo ; /bin/grep MHz /proc/cpuinfo ; /bin/grep cache /proc/cpuinfo ; /bin/grep MemTotal /proc/meminfo ; /bin/grep SwapTotal /proc/meminfo <br>
+
+<br><B>Servlets server</B><br>
+&nbsp &nbsp Command is: /usr/bin/ssh -x localhost /bin/echo "Host  : "`/bin/hostname` ; /bin/echo "Kernel: "`/bin/cat /proc/version` ; /bin/grep net /proc/pci ; /bin/grep processor /proc/cpuinfo ; /bin/grep vendor_id /proc/cpuinfo ; /bin/grep model /proc/cpuinfo ; /bin/grep MHz /proc/cpuinfo ; /bin/grep cache /proc/cpuinfo ; /bin/grep MemTotal /proc/meminfo ; /bin/grep SwapTotal /proc/meminfo <br>
+
+<br><B>Local client</B><br>
+&nbsp &nbsp Command is: /usr/bin/ssh -x localhost /bin/echo "Host  : "`/bin/hostname` ; /bin/echo "Kernel: "`/bin/cat /proc/version` ; /bin/grep net /proc/pci ; /bin/grep processor /proc/cpuinfo ; /bin/grep vendor_id /proc/cpuinfo ; /bin/grep model /proc/cpuinfo ; /bin/grep MHz /proc/cpuinfo ; /bin/grep cache /proc/cpuinfo ; /bin/grep MemTotal /proc/meminfo ; /bin/grep SwapTotal /proc/meminfo <br>
+
+<br><p><A NAME="time"></A><h3>Test timing information</h3><p>
+<TABLE BORDER=1>
+<THEAD><TR><TH>Phase<TH>Main client<TBODY>
+<TR><TD><B>Test start</B><TD>2012-4-11 4:54:4
+<TR><TD><B>Up ramp start</B><TD>2012-4-11 4:54:4
+<TR><TD><B>Runtime session start</B><TD>2012-4-11 4:56:4
+<TR><TD><B>Down ramp start</B><TD>2012-4-11 5:11:4
+<TR><TD><B>Test end</B><TD>2012-4-11 5:12:6
+<TR><TD><B>Up ramp length</B><TD>    2 minutes  0 millisecond  (requested 120000 ms)
+<TR><TD><B>Runtime session length</B><TD>    15 minutes  0 millisecond  (requested 900000 ms)
+<TR><TD><B>Down ramp length</B><TD>    1 minute  1 millisecond  (requested 60000 ms)
+<TR><TD><B>Total test length</B><TD>    18 minutes 2 seconds 436 milliseconds 
+</TABLE><p>
+<br><A NAME="up_stat"></A>
+<br><h3>Up ramp statistics</h3><p>
+<TABLE BORDER=1>
+<THEAD><TR><TH>State name<TH>% of total<TH>Count<TH>Errors<TH>Minimum Time<TH>Maximum Time<TH>Average Time<TBODY>
+<TR><TD><div align=left>Home</div><TD><div align=right>100.00 %</div><TD><div align=right>4802</div><TD><div align=right>0</div><TD><div align=right>2147483647 ms</div><TD><div align=right>5304 ms</div><TD><div align=right>4813 ms</div>
+<TR><TD><div align=left><B>Total</div></B><TD><div align=right><B>100 

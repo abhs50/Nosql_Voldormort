@@ -1,0 +1,41 @@
+
+<project name="RUBiS" default="dist" basedir=".">
+  <!-- RUBiS main Ant build file -->
+  <property name="version" value="1.0"/>
+
+  <property file="build.properties" />
+
+  <!-- Servlet version -->
+
+ <target name="servlets">
+    <ant dir="Servlets" target="dist"/>
+ </target>
+
+  <!-- Client -->
+
+ <target name="client">
+    <ant dir="Client" target="dist"/>
+ </target>
+
+  <!-- run the client -->
+  <target name="emulator" depends="client">
+     <java classname="edu.rice.rubis.client.ClientEmulator"
+	   classpath="./Client/${build}/RUBiS-${version}"
+	   fork="yes"/>
+  </target>
+
+
+  <!-- Global rules -->
+
+    <target name="clean" description="Remove all the generated files or directories">
+        <ant dir="Client" target="clean"/>
+        <ant dir="Servlets" target="clean"/>
+    </target>
+
+    <target name="all" description="Build all the RUBiS versions and client emulator">
+        <ant dir="Client" target="dist"/>
+        <ant dir="Servlets" target="dist"/>
+    </target>
+
+</project>
+

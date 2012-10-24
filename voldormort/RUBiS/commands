@@ -1,0 +1,72 @@
+make clean
+make servlets
+make client
+make emulator
+
+
+cp -r Servlet_HTML/* /home/abhi/jakarta-tomcat-4.1.27/webapps/rubis_servlets/
+cp -r Servlets/rubis_servlets.jar /home/abhi/jakarta-tomcat-4.1.27/webapps/rubis_servlet/WEB-INF/lib/
+
+update items set end_date = DATE_ADD(items.end_date, INTERVAL 1 YEAR);
+update items set end_date = DATE_ADD(items.end_date, INTERVAL 60 DAY);
+
+update items set start_date = DATE_ADD(items.start_date, INTERVAL 10 YEAR);
+
+
+jakarta-tomcat-4.1.27
+jakarta-tomcat-4.1.27
+
+find ./ -type f | xargs sed -i 's/jai/abhi/'
+
+find ./ -type f | xargs sed -i 's/jakarta-tomcat-4.1.27/jakarta-tomcat-4.1.27/'
+
+find ./ -type f | xargs sed -i 's/jakarta-tomcat-4.1.27/jakarta-tomcat-4.1.27/'
+
+find ./ -type f | xargs sed -i 's/rubis_servlet/rubis_servlet_vold/'
+
+export CATALINA_HOME=/home/abhi/jakarta-tomcat-4.1.27
+export JAVA_OPTS=-Xmx64M
+
+$ sudo add-apt-repository ppa:ferramroberto/java
+$ sudo apt-get update
+$ sudo apt-get install sun-java6-jdk sun-java6-jre
+
+
+ find ./ -type f | xargs sed -i 's/jai/abhi/'
+
+sudo passwd root
+
+bin/voldemort-server.sh config/single_node_cluster > log_test
+bin/voldemort-shell.sh test tcp://localhost:6666
+
+https://github.com/voldemort/voldemort/wiki/Voldemort-Admin-tool
+
+bin/voldemort-shell.sh test tcp://localhost:6666
+
+./bin/voldemort-admin-tool.sh --delete-store users --url "tcp://localhost:6666"
+
+
+put "sequence_user_id" "0"
+put "sequence_items_id" "0"
+put "sequence_bids_id" "0"
+put "sequence_buy_now_id" "0"
+put "sequence_categories_id" "0"
+put "sequence_regions_id" "0"
+put "sequence_comments_id" "0"
+
+
+To do :
+
+put items_sold in registeritem and record that agianst that user
+setup end_date logic 
+StoreBid - update the user table ka bid with item info
+
+export JAVA_OPTS=-Xmx1024M
+
+
+
+
+
+
+
+
